@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TOSN LOP 9</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<button class="back-button" onclick="goBack()">Back</button>
+<div class="container">
+    <h1 class="text-center">Tính Toán Phức Tạp</h1>
+    <form id="calculator-form">
+        <div class="form-group">
+            <label for="num1">Số thứ nhất:</label>
+            <input type="number" class="form-control" id="num1" name="num1" required>
+        </div>
+        <div class="form-group">
+            <label for="operator">Phép tính:</label>
+            <select class="form-control" id="operator" name="operator">
+                <option value="add">Cộng</option>
+                <option value="subtract">Trừ</option>
+                <option value="multiply">Nhân</option>
+                <option value="divide">Chia</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="num2">Số thứ hai:</label>
+            <input type="number" class="form-control" id="num2" name="num2" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Tính toán</button>
+    </form>
+    <div id="result" class="result mt-3"></div>
+</div>
+<script src="toanlop9.js"></script> 
+</body>
+</html>

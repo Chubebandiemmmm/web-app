@@ -1,0 +1,271 @@
+/* style.css */
+/* style.css */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #333;
+  position: fixed;
+  left: -250px;
+  top: 0;
+  transition: left 0.3s ease;
+}
+
+.container {
+  flex: 1;
+  padding: 20px;
+}
+
+.toggle-button {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* Hiệu ứng liên tục đổi màu */
+@keyframes changeBackgroundColor {
+  0% { background-color: #333; }
+  25% { background-color: #ff6347; }
+  50% { background-color: #66cc99; }
+  75% { background-color: #1e90ff; }
+  100% { background-color: #333; }
+}
+
+.sidebar.open-sidebar {
+  left: 0;
+  animation: changeBackgroundColor 4s linear infinite;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.1); /* Độ mờ trong suốt */
+  padding: 5px 10px;
+  border-radius: 50%;
+} 
+
+.openbtn:hover {
+    color: #f44336;
+}
+
+/* LOGIN CSS */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.login-container {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.login-container h1 {
+  margin-bottom: 20px;
+}
+
+input {
+  display: block;
+  width: 91%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+ 
+.message {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ff0000; /* Màu đỏ cho thông báo lỗi */
+}
+/* Toan Lop 9 */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 350px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 16px;
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Loại bỏ gạch chân của liên kết */
+h2 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hiệu ứng hover khi di chuột hoặc chạm trên màn hình */
+h2:hover, h2:active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* BACK */
+.back-button {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  font-size: 16px;
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* LOADING */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    display: none;
+    /* Ẩn mặc định */
+}
+
+.loading-text {
+    color: #fff;
+    font-size: 24px;
+}
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+}
+
+.tool {
+    text-align: center;
+}
+
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+#dataContainer {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
